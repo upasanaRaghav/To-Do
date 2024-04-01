@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+html {
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    190deg,
+    rgb(71, 120, 201) 0%,
+    rgb(147, 224, 223) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  overflow: hidden;
+}
+
+.App {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.addTodos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.todo-input {
+  min-width: 15rem;
+  width: 40vw;
+  max-height: 2.5rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-input:focus {
+  outline: none;
+  border: 2px solid #59c3c3;
+}
+
+.add-btn {
+  margin-left: 1rem;
+  background-color: #59c3c3;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:focus {
+  outline: none;
+}
+
+.displaytodos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.displaytodos .buttons {
+  margin-bottom: 2rem;
+}
+
+.displaytodos .buttons button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #59c3c3;
+  color: #fff;
+  margin-right: 1rem;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.displaytodos .buttons button:focus {
+  outline: none;
+}
+
+.displaytodos ul {
+  list-style: none;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(180, 182, 218);
+  background: radial-gradient(
+    circle,
+    hsla(237, 34%, 78%, 0.9) 0%,
+    hsla(219, 88%, 94%, 0.9) 100%
+  );
+  margin: 0 1rem 1rem 0;
+  height: auto;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #694caf;
+  height: 70%;
+}
+
+.card textarea:disabled {
+  background-color: transparent;
+}
+
+.card .btns {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.card .btns button {
+  border-radius: 20%;
+  border: none;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #694caf;
+  background-color: transparent;
+}
+
+.card .btns button:focus {
+  outline: none;
+}
+
+.completed {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  background-color: #59c3c3;
+  border: 2px solid #272727;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
